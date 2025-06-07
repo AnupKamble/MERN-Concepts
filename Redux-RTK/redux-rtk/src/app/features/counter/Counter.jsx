@@ -27,11 +27,14 @@ const Counter = () => {
   };
 
 
-  const countVal = useSelector(incr => incr.counter.value); //  Accissing the value from the state using useSelector hook
+  const countVal = useSelector(incr => incr.counter.value); 
                               // var = var.reducer.initialState.value
-
+   //  Accissing the value from the state using useSelector hook
+                              
   // console.log(countVal)
+
   const dispatch = useDispatch();
+  // useDispatch hook is used to dispatch actions to the store
 
   return (
     <div>

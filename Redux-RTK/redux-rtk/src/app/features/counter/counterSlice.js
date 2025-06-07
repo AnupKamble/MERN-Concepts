@@ -3,6 +3,9 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     value:0,
+    // Initial state of the counter 
+    // we can access this value in the component using useSelector hook
+  
 }
 
 const counterSlice = createSlice({
