@@ -2,14 +2,17 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
+const userRoutes = require('./routes/routes.userRoutes');
 
 
 
 app.use(express.json())
+app.use('/home/users', userRoutes );
 
-app.get('/home', (req, res) => {
-    res.status(200).json({ status: 'OK' });
-  });
+
+// app.get('/', (req, res) => {
+//     res.status(200).json({ status: 'OK' });
+//   });
   
 
 
